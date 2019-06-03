@@ -1,1 +1,1 @@
-matorka lox
+jax ws restful servisas

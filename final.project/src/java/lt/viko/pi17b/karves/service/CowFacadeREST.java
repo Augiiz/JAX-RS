@@ -5,6 +5,7 @@
  */
 package lt.viko.pi17b.karves.service;
 
+
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -18,6 +19,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
 import lt.viko.pi17b.karves.Cow;
 
 /**
@@ -64,7 +66,7 @@ public class CowFacadeREST extends AbstractFacade<Cow> {
 
     @GET
     @Override
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces({ MediaType.APPLICATION_JSON})
     public List<Cow> findAll() {
         return super.findAll();
     }
@@ -88,4 +90,7 @@ public class CowFacadeREST extends AbstractFacade<Cow> {
         return em;
     }
     
+    
+    
 }
+
